@@ -11,10 +11,12 @@ class Component extends React.Component {
   }
 
   render() {
-    let value = 'Loading';
+    let value;
 
-    if (!this.props.loading) {
-      value = this.props.username
+    if (this.props.loading) {
+      value = 'Loading';
+    } else {
+      value = this.props.username;
     }
 
     return (
