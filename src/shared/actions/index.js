@@ -13,16 +13,3 @@ export function beginLoadingUser() {
   }
 }
 
-export function successLoadingUser(payload) {
-  return {
-    type: SUCCESS_LOADING_USER,
-    payload: payload
-  }
-}
-
-export function errorLoadingUser(payload) {
-  return {
-    type: ERROR_LOADING_USER,
-    payload: payload
-  }
-}
